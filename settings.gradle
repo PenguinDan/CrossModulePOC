@@ -2,4 +2,4 @@ rootProject.name = "Cross-Module-POC"
 include ':app'
 include ':feature_auth'
 include ':feature_camera'
-include ':core'
+include ':network'

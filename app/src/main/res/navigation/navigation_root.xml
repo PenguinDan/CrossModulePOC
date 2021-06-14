@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_root"
+    app:startDestination="@id/navigation_auth">
+
+    <action
+        android:id="@+id/action_auth_to_camera"
+        app:destination="@+id/navigation_camera">
+        <argument
+            android:name="reason"
+            app:argType="string"
+            app:nullable="false" />
+    </action>
+
+    <include app:graph="@navigation/navigation_auth" />
+    <include app:graph="@navigation/navigation_camera" />
+
+</navigation>

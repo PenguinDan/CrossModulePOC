@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_camera"
+    app:startDestination="@id/camera_fragment">
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="com.example.feature_camera.CameraFragment"
+        tools:layout="@layout/camera_fragment">
+        <argument
+            android:name="reason"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+</navigation>
